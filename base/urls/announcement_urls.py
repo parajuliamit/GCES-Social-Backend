@@ -3,6 +3,6 @@ from base.views import announcement_views as views
 
 urlpatterns = [
 
-    path('',views.getAnnouncement,name='announcement'),
+    path('',views.getAnnouncements,name='announcement'),
 
 ]
