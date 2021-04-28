@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form action="add" method="post">
+{% csrf_token %}
+Title : <input type="text" name="title"><br>
+Content : <input type="text" name="content"><br>
+Sender : <input type="text" name="sender"><br>
+ <label for="category">Choose a category:</label>
+  <select name="category">
+    <option value="general">General</option>
+    <option value="events">Events</option>
+    <option value="exam">Exam</option>
+  </select>
+<input type="submit">
+</form>
+
+{% endblock %}
