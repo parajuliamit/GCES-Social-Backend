@@ -45,12 +45,40 @@ def registerUser(request):
         message = {'detail':'User with this email already exists.'}
         return Response(message,status=status.HTTP_400_BAD_REQUEST)
 
+
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def getUserProfile(request):
     user = request.user
     serializer = UserSerializer(user,many = False)
     return Response(serializer.data)
+
+@api_view(['PUT'])
+@permission_classes([IsAuthenticated])
+def editName(request):
+    user = request.user
+    serializer = UserSerializerWithToken(user,many = False)
+
+    data = request.data
+
+    user.first_name = data['name']
+
+    user.save()
+    return Response(serializer.data)
+
+@api_view(['PUT'])
+@permission_classes([IsAuthenticated])
+def changePassword(request):
+    user = request.user
+    serializer = UserSerializerWithToken(user,many = False)
+
+    data = request.data
+    
+    user.password=make_password(data['password'])
+    
+    user.save()
+    return Response(serializer.data)
+
 
 @api_view(['GET'])
 @permission_classes([IsAdminUser])
