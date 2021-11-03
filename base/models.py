@@ -25,8 +25,14 @@ class Blog(models.Model):
     content = models.TextField()
     createdAt = models.DateTimeField(auto_now_add=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    likes = models.IntegerField(null=True,blank=True,default=0)
+    likes = models.ManyToManyField(User,related_name='blog_posts')
+    # likes = models.IntegerField(null=True,blank=True,default=0)
     is_approved = models.BooleanField(default=False)
+    # liked = models.BooleanField(default=False)
+
+    @property
+    def total_likes(self):
+        return self.likes.count
 
     def __str__(self):
         return self.title
