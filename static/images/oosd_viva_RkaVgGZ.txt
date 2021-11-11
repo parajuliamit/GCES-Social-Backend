@@ -1,0 +1,161 @@
+Software: is a generic term for organized collections of computer data and instructions.
+
+Two types:
+• System Software:
+ is responsible for controlling, integrating, and managing the individual hardware components of a computer system.
+ E.g. operating system
+
+• Application Software:
+ is used to accomplish specific tasks other than just running the computer system.
+ E.g. Microsoft Office
+
+Software Engineering:
+ is an engineering branch associated with development of software product using well-defined scientific principles, methods and procedures
+
+Software Development Paradigm:
+ A way that helps developer to select a strategy to develop the software. A software development paradigm has its own set of tools, methods and procedures, which are expressed clearly and defines software development life cycle. A few of software development paradigms or process models are defined as follows:
+- Waterfall Model
+- Iterative Model
+- Spiral Model
+- V Model
+- Big Bang Mode
+
+OOSD
+Object-oriented design is the process of planning a system of interacting objects for the purpose of solving a software problem. It is one approach to software design.
+
+Explain the Waterfall model.
+• is the simplest model of software development paradigm.
+• It says that all the phases of SDLC will function one after another in linear manner.
+• This model is best suited when developers already have designed and developed
+similar software in the past and are aware of all its domains.
+
+Explain Iterative model,
+• This model leads the software development process in iterations.
+• It projects the process of development in cyclic manner repeating every step after
+every cycle of SDLC process.
+• Because a cycle includes small portion of whole software process, it is easier to
+manage the development process but it consumes more resources.
+
+Explain Incremental models.
+A process of software development where requirements are broken down into multiple standalone modules of software development cycle. Incremental development is done in steps from analysis design, implementation, testing/verification, maintenance.
+
+Explain Agile model
+ A software development approach based on iterative and increment  development.
+
+ What is a Worker?
+A worker is a stereotype of a class that is specified in UML
+
+ What do you mean by Artifacts?
+An artifact is a classifier that represents some physical entity, a piece of information that is used or is produced by a software development process, or by deployment and operation of a system.
+
+What are the building blocks of UML?
+
+a. Things: • are the most important building blocks of UML. Things can be:
+
+      Structural: define the static part of the model. They represent physical and conceptual elements.
+      Behavioral: consists of the dynamic parts of UML models, 
+          • Interaction: defined as a behavior that consists of a group of messages exchanged among elements to accomplish a specific task.
+          • State Machine: defines the sequence of states an object goes through in response to events and is useful when the state of an object in its life cycle is important.
+
+     Group: can be defined as a mechanism to group elements of a UML model together. 
+     Package:  is the only one grouping thing available for gathering structural and behavioral things.
+     Annotational: can be defined as a mechanism to capture remarks, descriptions, and comments of UML model elements.
+
+b. Relationships: another most important building block of UML. It shows how elements are associated with each other and this association describes the functionality of an application.
+         Dependency: is a relationship between two things in which change in one element also affects the other one.
+         Association: is basically a set of links that connects elements of an UML model.  It also describes how many objects are taking part in that relationship.
+         Generalization: can be defined as a relationship which connects a specialized element with a generalized element.  It basically describes inheritance relationship in the world of objects.
+         Realization: can be defined as a relationship in which two elements are connected. One element describes some responsibility which is not implemented and the other one implements them. 
+
+c. Diagrams: All the elements, relationships are used to make a complete UML diagram and the diagram represents a system The visual effect of the UML diagram is the most important part of the entire process.
+All the other elements are used to make it a complete one.
+• Different UML diagrams are
+     • Class diagram : a diagram used in designing and modeling software to describe classes and their relationships.
+     • Object diagram:  it shows the instances of classes in the system.
+     • Use case diagram: a graphical depiction of a user's possible interactions with a system. 
+         Actors:  An actor specifies a role played by a user or any other system that interacts with the subject. Types are: primary or secondary.
+     • Sequence diagram: illustrates the sequence of messages between objects in an interaction, A sequence diagram consists of a group of objects that are represented by lifelines, and the messages that they exchange over time during the interaction.
+     • Collaboration diagram (Communication diagram): an illustration of the relationships and interactions among software objects in uml
+     • Activity diagram: a behavioral diagram i.e. it depicts the behavior of a system
+     • State chart diagram: used to model the dynamic nature of a system
+     • Deployment diagram:  used to visualize the physical hardware and software of a system.
+     • Component diagram: used to visualize the physical components in a system. These components are libraries, packages, files, etc
+
+
+Modeling types in uml:
+     Structural Modeling
+         • captures the static features of a system
+         • represents the framework for the system and this framework is the place where all other components exist.
+     Behavioral Modeling
+         • describes the interaction in the system.
+         • It represents the interaction among the structural diagrams.
+    Architectural Modeling
+         • represents the overall framework of the system.
+         • It contains both structural and behavioral elements of the system.
+         • Architectural model can be defined as the blue print of the entire system.
+
+ Phases of UML
+    4 phases:
+        Inception: Defining the scope of the system and identifying critical risks and determining when and how the project will address them
+        Elaboration: establish the ability to build the new system given the financial constraints, schedule constraints, and other kinds of constraints that the development project faces.
+        Construction: to build a system capable of operating successfully 
+        Transition: the project team focuses on correcting defects and modifying the system to correct previously unidentified problems.
+
+Workflow of UML:
+requirements, analysis, design, implementation, and test
+
+
+Design pattern: 
+Design patterns are formalized solutions to common programming
+problems. They mostly refer to object oriented programming
+
+Need of design pattern & its types
+A design pattern provides a general reusable solution for the common problems that occur in software design.
+The pattern typically shows relationships and interactions between classes or objects. 
+By using design patterns, you can make your code more flexible, reusable, and maintainable.
+
+
+ What are the types of Design Patterns?
+    • Creational Pattern: provide object creation mechanisms that increase flexibility and reuse of existing code.
+                                      Are used when we have to separate a system from how its objects are created, composed, and represented.
+    • Structural Pattern:  explain how to assemble objects and classes into larger structures, while keeping the structures flexible and efficient.
+    • Behavioral Pattern:  take care of effective communication and the assignment of responsibilities between objects.
+
+
+Use/importance of design pattern:
+   Design Patterns establishes solutions to common problems which helps to keep code maintainable, extensible and loosely coupled
+   Design patterns provide general solutions, documented in a format that doesn't require specifics tied to a particular problem. 
+   In addition, patterns allow developers to communicate using well-known, well understood names for software interactions.
+   Design patterns can speed up the development process
+
+ 
+Project and process difference
+- a process is a set procedure that involves a sequence of steps that need to be taken in order to produce a result, whereas a project is a temporary course of action that aims to create  something new or implementing a change
+-Eg:
+
+Differences between non-functional and functional requirement(example)
+ - functional requirements define what the system does or must not do, non-functional requirements specify how the system should do it
+-eg: A system loads a webpage when someone clicks on a button. The non-functional requirement specifies how fast the webpage must load.
+
+What is quality assurance?
+-a way of preventing mistakes and defects in manufactured products and avoiding problems when delivering products or services to customers
+
+What is alpha & beta testing?
+-Alpha testing relates to the internal testing by customers, online visitors or an independent test team for in-house preliminary software, before the next stage of beta testing.
+- Beta testing is a reference to the external form of user acceptance testing within the marketplace
+ 
+
+Types and models of software architecture (MVC)
+   -The Model-View-Controller (MVC) framework is an architectural pattern that separates an application into three main logical components :
+        Model:- stores dataand its related logics
+                     -responds to the req from the view and the responds from the controller
+        View:- represets the presentation of data, requests the model to give infos
+        Controller:- handles the user interaction, takes input from users and converts it to commands for the model or view
+
+
+
+Servive Oriented Architecture: is a software design where services are provided to the other components by application components, through a communication protocol over a network. It is a type of architecture
+
+Message Oriented Middleware: software or hardware infrastructure supporting sending and receiving messages between distributed systems.
+
+

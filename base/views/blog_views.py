@@ -47,9 +47,9 @@ def postBlog(request):
         blog.content = content
         blog.user = request.user
         blog.save()
-        return Response(BlogSerializer(blog).data)
+        return Response(BlogSerializer(blog,context={'request': request}).data)
     else:
-        return Response(serializer.errors)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
         
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
@@ -65,7 +65,7 @@ def postComment(request):
         comment.save()
         return Response({"message":"success"})
     else:
-        return Response(serializer.errors)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
         
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
