@@ -12,7 +12,7 @@ class Batch(models.Model):
         return self.name
 
 class Announcement(models.Model):
-    user = models.ForeignKey(User, on_delete=models.SET_NULL,null=True)
+    user = models.ForeignKey(User, on_delete=models.SET_DEFAULT,null=False,default=1)
     title = models.CharField(max_length = 200)
     content = models.TextField()
     image = models.ImageField(null = True,blank = True)
@@ -109,6 +109,9 @@ class AssignmentSubmission(models.Model):
 class VerifyPin(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     otp = models.CharField(max_length=6)
+
+    def __str__(self):
+        return self.user.first_name
 
 class Event(models.Model):
     title = models.CharField(max_length = 200)
